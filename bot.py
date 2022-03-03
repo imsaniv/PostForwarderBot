@@ -27,7 +27,7 @@ async def _(event):
 
 @bot.on(events.NewMessage(pattern="/help"))
 async def helpp(event):
-    await event.reply("**Help menu**\n\nThis bot will send all new posts in one channel to the other channel. (without forwarded tag)!\nIt can be used only in two channels at a time, so kindly deploy your own bot from [here](https://github.com/stark-Prince/PostForwarderBot).\n\nAdd me to both the channels and make me an admin in both, and all new messages would be autoposted on the linked channel!!")
+    await event.reply("**Help menu**\n\nThis bot will send all new posts in one channel to the other channel. (without forwarded tag)!\nIt can be used only in two channels at a time, so kindly deploy your own bot from [here](https://github.com/imsaniv/PostForwarderBot).\n\nAdd me to both the channels and make me an admin in both, and all new messages would be autoposted on the linked channel!!")
 
 @bot.on(events.NewMessage(incoming=True, chats=from_channel)) 
 async def _(event): 
