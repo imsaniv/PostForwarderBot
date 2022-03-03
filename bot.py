@@ -22,7 +22,7 @@ except:
 @bot.on(events.NewMessage(pattern="/start"))
 async def _(event):
     ok = await bot(GetFullUserRequest(event.sender_id))
-    await event.reply(f"Hi `{ok.user.first_name}`!\n\nI am a channel post forwarder bot!! Read /help to know more!\n\nI can be used in only two channels (one user) at a time. Kindly deploy your own bot.", buttons=[Button.url("Updates Channel", url="https://t.me/roBots_Hub"),Button.url("Repo", url="https://github.com/stark-Prince/PostForwarderBot"), Button.url("Dev", url="https://t.me/its_Prince")], link_preview=False)
+    await event.reply(f"Hi `{ok.user.first_name}`!\n\nI am a channel post forwarder bot!! Read /help to know more!\n\nI can be used in only two channels (one user) at a time. Kindly deploy your own bot.")], link_preview=False)
 
 
 @bot.on(events.NewMessage(pattern="/help"))
